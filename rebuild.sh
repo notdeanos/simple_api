@@ -29,8 +29,8 @@ docker container run -d -p 3002:3002 deanmcdonald/simple-api:0.0.1.RELEASE
 if $S_FLAG; then
   echo "Pushing to pihole2"
   rsync -aqz . dean@192.168.0.6:simple_api/
-  ssh pihole2 "docker build -t deanmcdonald/simple-api:0.0.1.RELEASE simple_api/"
-  ssh pihole2 "docker container run -d -p 3002:3002 deanmcdonald/simple-api:0.0.1.RELEASE"
+  ssh pihole2 "docker build -t deanmcdonald/simple-api:0.0.1.RELEASE simple_api/ && \
+               docker container run -d -p 3030:3030 deanmcdonald/simple-api:0.0.1.RELEASE"
 fi
 
 
