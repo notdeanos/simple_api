@@ -1,4 +1,7 @@
 - index.py
 - requirements.txt
-Flask==2.0.2
-Flask-Cors==3.0.10
+Flask
+Flask-Cors
+jinja2
+MarkupSafe
+

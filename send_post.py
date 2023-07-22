@@ -1,6 +1,6 @@
 import requests
 
-url = 'http://127.0.0.1:5000/api'
+url = 'http://127.0.0.1:3002/api'
 data = {'appdome': 'appdo.me123'}
 response = requests.post(url, json=data)
 
